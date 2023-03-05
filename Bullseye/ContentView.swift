@@ -11,8 +11,8 @@ struct ContentView: View {
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO\n🎯🎯🎯")
-      Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
-      Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+      Text("89")
+      Slider(value: .constant(50), in:1.0...100.0)
     }
   }
 }
