@@ -14,6 +14,7 @@
 		A1C3CBF829B55E7A000DE804 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3CBF729B55E7A000DE804 /* Game.swift */; };
 		A1C3CC0029B58A8F000DE804 /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3CBFF29B58A8F000DE804 /* BullseyeTests.swift */; };
 		A1C3CC0729B6CDE7000DE804 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3CC0629B6CDE7000DE804 /* TextViews.swift */; };
+		A1C3CC0929B6E284000DE804 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3CC0829B6E284000DE804 /* RoundedViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A1C3CBFD29B58A8F000DE804 /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3CBFF29B58A8F000DE804 /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
 		A1C3CC0629B6CDE7000DE804 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		A1C3CC0829B6E284000DE804 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				A1C3CBE829B423AD000DE804 /* ContentView.swift */,
 				A1C3CC0629B6CDE7000DE804 /* TextViews.swift */,
+				A1C3CC0829B6E284000DE804 /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				A1C3CBE929B423AD000DE804 /* ContentView.swift in Sources */,
 				A1C3CC0729B6CDE7000DE804 /* TextViews.swift in Sources */,
+				A1C3CC0929B6E284000DE804 /* RoundedViews.swift in Sources */,
 				A1C3CBF829B55E7A000DE804 /* Game.swift in Sources */,
 				A1C3CBE729B423AD000DE804 /* BullseyeApp.swift in Sources */,
 			);
