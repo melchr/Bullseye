@@ -16,10 +16,20 @@ struct InstructionText: View {
 
 struct BigNumberText: View {
   var text: String
+  
+  var body: some View {
+    Text(text)
+      .bold()
+      .font(.title2)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+struct SliderLabelText: View {
+  var text: String
   var body: some View {
     Text(text)
       .fontWeight(.black)
-      .font(.largeTitle)
       .kerning(-1.0)
       .foregroundColor(Color("TextColor"))
   }
@@ -30,6 +40,7 @@ struct TextViews_Previews: PreviewProvider {
       VStack {
         InstructionText(text: "Instructions")
         BigNumberText(text: "999")
+        SliderLabelText(text: "99")
       }
     }
 }
