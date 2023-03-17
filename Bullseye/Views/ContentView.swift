@@ -59,7 +59,6 @@ struct HitMeButton: View {
   var body: some View {
     Button("Hit me".uppercased()) {
       alertIsVisible = true
-      game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
     }
     .padding(20.0)
     .background(
@@ -81,6 +80,7 @@ struct HitMeButton: View {
       isPresented: $alertIsVisible,
       actions: {
         Button("Clicked") {
+          game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
           
         }
       },
