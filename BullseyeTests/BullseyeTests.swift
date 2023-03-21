@@ -48,6 +48,6 @@ final class BullseyeTests: XCTestCase {
     game.restart()
     XCTAssertEqual(game.score, 0)
     XCTAssertEqual(game.round, 1)
-  }
+  } 
   
 }
