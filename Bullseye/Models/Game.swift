@@ -4,6 +4,7 @@ struct Game {
   var target = Int.random(in: 1...100)
   var score = 0
   var round = 1
+  var leaderboardEntries: [LeaderboardEntry] = []
   
   func points(sliderValue: Int) -> Int {
     let difference = abs(target - sliderValue)
@@ -29,4 +30,9 @@ struct Game {
     round = 1
     target = Int.random(in: 1...100)
   }
+}
+
+struct LeaderboardEntry {
+  let score: Int
+  let date: Date
 }
