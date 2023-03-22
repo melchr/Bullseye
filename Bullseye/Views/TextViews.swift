@@ -53,6 +53,8 @@ struct BodyText: View {
     Text(text)
       .font(.subheadline)
       .fontWeight(.semibold)
+      .multilineTextAlignment(.center)
+      .lineSpacing(12)
   }
 }
 
@@ -60,11 +62,14 @@ struct ButtonText: View {
   var text: String
   var body: some View {
     Text(text)
+      .bold()
       .padding()
       .frame(maxWidth: .infinity)
       .background(
         Color.accentColor
       )
+      .foregroundColor(.white)
+      .cornerRadius(12)
   }
 }
 
