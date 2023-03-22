@@ -6,6 +6,16 @@ struct Game {
   var round = 1
   var leaderboardEntries: [LeaderboardEntry] = []
   
+  init(loadTestData: Bool = false) {
+    if loadTestData {
+      addToLeaderboard(score: 100)
+      addToLeaderboard(score: 80)
+      addToLeaderboard(score: 200)
+      addToLeaderboard(score: 50)
+      addToLeaderboard(score: 20)
+    }
+  }
+  
   func points(sliderValue: Int) -> Int {
     let difference = abs(target - sliderValue)
     let bonus: Int
