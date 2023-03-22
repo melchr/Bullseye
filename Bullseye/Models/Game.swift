@@ -20,6 +20,7 @@ struct Game {
   }
   
   mutating func startNewRound(points: Int) {
+    addToLeaderboard(score: points)
     score += points
     round += 1
     target = Int.random(in: 1...100)
@@ -29,6 +30,13 @@ struct Game {
     score = 0
     round = 1
     target = Int.random(in: 1...100)
+  }
+  
+  mutating func addToLeaderboard(score: Int) {
+    leaderboardEntries.append(LeaderboardEntry(score: score, date: Date()))
+    leaderboardEntries.sort { entry1, entry2 in
+      entry1.score > entry2.score
+    }
   }
 }
 
