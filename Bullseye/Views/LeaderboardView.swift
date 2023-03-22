@@ -15,7 +15,11 @@ struct HeaderView: View {
       BigBoldText(text: "Leaderboard")
       HStack {
         Spacer()
-        RoundedImageViewFilled(systemName: "arrow.counterclockwise")
+        Button {
+          
+        } label: {
+          RoundedImageViewFilled(systemName: "xmark")
+        }
       }
     }
     
