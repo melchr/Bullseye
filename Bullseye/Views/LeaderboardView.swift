@@ -4,6 +4,7 @@ struct LeaderboardView: View {
   var body: some View {
     VStack(spacing: 10) {
       HeaderView()
+      LabelView()
       RowView(index: 1, score: 10, date: Date())
     }
   }
@@ -23,6 +24,23 @@ struct HeaderView: View {
       }
     }
     
+  }
+}
+
+struct LabelView: View {
+  var body: some View {
+    HStack {
+      Spacer()
+        .frame(width: Constants.General.roundedViewLength)
+      Spacer()
+      LabelText(text: "Score")
+        .frame(width: Constants.Leaderboard.scoreColumnWidth)
+      Spacer()
+      LabelText(text: "Date")
+        .frame(width: Constants.Leaderboard.dateColumnWidth)
+    }
+    .padding(.horizontal)
+    .frame(maxWidth: Constants.Leaderboard.maxRowWidth)
   }
 }
 
