@@ -2,10 +2,13 @@ import SwiftUI
 
 struct LeaderboardView: View {
   var body: some View {
-    VStack(spacing: 10) {
-      HeaderView()
-      LabelView()
-      RowView(index: 1, score: 10, date: Date())
+    ZStack {
+      Color("BackgroundColor").ignoresSafeArea()
+      VStack(spacing: 10) {
+        HeaderView()
+        LabelView()
+        RowView(index: 1, score: 10, date: Date())
+      }
     }
   }
 }
